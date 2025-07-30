@@ -29,4 +29,5 @@ public class Activity {
 	    private String name;
 	    private String icon;
 	    private String color;
+	    private String description;
 }

@@ -19,4 +19,5 @@ public class ActivityDTO {
     private String name;
     private String icon;
     private String color;
+    private String description;
 }
