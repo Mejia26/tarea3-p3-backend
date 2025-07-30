@@ -1,5 +1,6 @@
 package com.activityplanner.dto;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import lombok.AllArgsConstructor;
@@ -21,4 +22,5 @@ public class ActivityDTO {
     private String color;
     private String description;
     private String secondColor;
+    private LocalDateTime createdAt;
 }
