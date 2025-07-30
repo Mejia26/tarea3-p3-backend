@@ -34,6 +34,7 @@ public class Activity {
 	    private String description;
 	    private String secondColor;
 	    private LocalDateTime createdAt;
+	    private String homeLinkBtn;
 	    
 	    @PrePersist
 	    public void onCreate() {

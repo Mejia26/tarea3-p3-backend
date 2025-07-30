@@ -23,4 +23,5 @@ public class ActivityDTO {
     private String description;
     private String secondColor;
     private LocalDateTime createdAt;
+    private String homeLinkBtn;
 }
