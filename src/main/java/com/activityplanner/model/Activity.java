@@ -30,4 +30,5 @@ public class Activity {
 	    private String icon;
 	    private String color;
 	    private String description;
+	    private String secondColor;
 }
