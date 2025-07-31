@@ -13,6 +13,7 @@ import lombok.Setter;
 
 @Data
 @AllArgsConstructor
+@Builder
 public class ActivityDTO {
 
 	private UUID id;
