@@ -1,8 +1,11 @@
 package com.activityplanner.controller;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -43,7 +46,13 @@ public class ActivityController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable UUID id) {
+    public ResponseEntity<Map<String, String>> delete(@PathVariable UUID id) {
         service.delete(id);
+        
+        return ResponseEntity
+        		.status(HttpStatus.OK)
+        		.body(
+        				Map.of("message","Activity successfully deleted!")
+        				);
     }
 }
