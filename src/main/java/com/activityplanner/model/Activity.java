@@ -35,9 +35,11 @@ public class Activity {
 	    private String secondColor;
 	    private LocalDateTime createdAt;
 	    private String homeLinkBtn;
+	    private LocalDateTime selectedHour;
 	    
 	    @PrePersist
 	    public void onCreate() {
 	    	createdAt = LocalDateTime.now();
+	    	selectedHour = LocalDateTime.now();
 	    }
 }
